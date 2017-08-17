@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    grid-template-columns: 400px 1fr 200px;
+    grid-template-rows: 300px auto 100px;
+}
+
+.grid-item {
+    margin: 2px;
+    background-color: #B1C7CC;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.clock {
+    border-radius: 20px;
+    color: #32cdc9;
+    font-size: 100px;
+    text-align: center;
+    line-height: 300px;
+    background-color: #009d97;
+}

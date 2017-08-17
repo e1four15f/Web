@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#text {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}

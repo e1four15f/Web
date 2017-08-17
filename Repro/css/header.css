@@ -1,0 +1,126 @@
+#under-top {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  height: 0px;
+  border-bottom: 9px solid #ededed;
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  padding: 34px 0 39px 0px;
+}
+
+#logo, #star {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 48px;
+  color: #333;
+}
+
+#star {
+  color: #c63;
+}
+
+#info {
+  font-family: "Gotham Narrow", sans-serif;
+  color: #9f9f9f;
+  font-size: 11px;
+}
+
+.banner {
+  float: right;
+  padding: 44px 6px 39px 0px;
+}
+
+#banner {
+  cursor: pointer;
+  width: 468px;
+  height: 60px;
+  box-shadow: 0 0 20px #f5f5f5;
+}
+
+#navigation {
+  float: left;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+.menu {
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+.menu > li {
+  background: linear-gradient(to bottom, #fbfbfb 0%, #ededed 50%, #f4f4f4 100%);
+  padding: 13px 22px 12px 22px;
+  border-right: 1px solid #dedede;
+  float: left;
+}
+
+.menu a {
+  font-family: "Helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #555;
+}
+
+.menu li:hover {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.menu #last {
+  border: 0;
+  height: 18px;
+  width: 30px;
+}
+
+.menu li:hover .sub-menu {
+  display: block;
+}
+
+.menu li:hover li {
+  display: block;
+}
+
+.menu .sub-menu {
+  padding-top: 13px;
+  margin: 0 0 0 -23px;
+  width: 148px;
+}
+
+.menu .sub-menu hr {
+  border-top: 1px solid #e3e3e3;
+}
+
+.menu .sub-menu li a {
+  color: #777;
+}
+
+.menu .sub-menu li:hover a {
+  color: #555;
+}
+
+.menu .sub-menu li {
+  background-color: #fafafa;
+  float: none;
+  border: 0;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.menu .sub-menu #last {
+  width: auto;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

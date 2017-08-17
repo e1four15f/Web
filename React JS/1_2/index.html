@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>1.2</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="content"></div>
+
+    <script type="text/babel">
+
+        var CONTACTS = [
+            {
+                id: 1,
+                name: 'Mike',
+                phoneNumber: '+321658751',
+                image: 'http://1.bp.blogspot.com/-aZg_bVwdlJ8/T35YVf4uV7I/AAAAAAAAAKQ/AVD2CAlOjnY/s1600/mike_06.jpg'
+            }, {
+                id: 2,
+                name: 'Donatello',
+                phoneNumber: '+9875438654654',
+                image: 'https://static.comicvine.com/uploads/square_small/4/49448/5635228-donatello+2.jpg'
+            }, {
+                id: 3,
+                name: 'Leonardo',
+                phoneNumber: '+654881357',
+                image: 'https://static.comicvine.com/uploads/original/4/49448/5635214-leonardo.jpg'
+            }, {
+                id: 4,
+                name: 'Raphael',
+                phoneNumber: '+1257862465477',
+                image: 'https://static.comicvine.com/uploads/original/4/49448/5635226-raphael+1.jpg'
+            }
+        ];
+
+        var Contact = React.createClass({
+            render: function() {
+                return (
+                    <li className="contact">
+                        <img className="contact-image" src={this.props.image} width="60px" height="60px"/>
+                        <div className="contact-info">
+                            <div className="contact-name">{this.props.name}</div>
+                            <div className="contact-number">{this.props.phoneNumber}</div>
+                        </div>
+                    </li>
+                );
+            }
+        });
+
+        var ContactList = React.createClass({
+            getInitialState: function() {
+                return {
+                    displayedContacts: CONTACTS
+                };
+            },
+
+            handleSearch: function(event) {
+                var searchQuery = event.target.value.toLowerCase();
+                var displayedContacts = CONTACTS.filter(function(el) {
+                   var searchValue = el.name.toLowerCase();
+                    return searchValue.indexOf(searchQuery) !== -1;
+                });
+
+                this.setState({
+                    displayedContacts: displayedContacts
+                });
+            },
+
+            render: function() {
+                return (
+                    <div className="contacts">
+                        <input className="search" type="text" onChange={this.handleSearch}/>
+                        <ul className="contacts-list">
+                            {
+                                this.state.displayedContacts.map(function(el) {
+                                    return <Contact
+                                            key={el.id}
+                                            name={el.name}
+                                            phoneNumber={el.phoneNumber}
+                                            image={el.image}
+                                    />;
+                                })
+                            }
+                        </ul>
+                    </div>
+                );
+            }
+        });
+
+        ReactDOM.render(
+                <ContactList/>,
+            document.getElementById('content')
+        );
+    </script>
+
+</body>
+</html>

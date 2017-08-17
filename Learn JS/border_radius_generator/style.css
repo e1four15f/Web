@@ -1,0 +1,23 @@
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#block {
+    background-color: pink;
+    margin: 2%;
+    padding: 5%;
+}
+
+.inner-block {
+    border: 1px dashed #fff;
+    margin: 1%;
+}
+
+input {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}

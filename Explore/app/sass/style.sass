@@ -1,0 +1,434 @@
+$red: #ff6d7f
+$under-red: #FF5161
+$dark-red: #CC3141
+$under-dark-red: #BB1121
+$purple: #8017be
+$under-purple: #600AA8
+$dark-purple: #450570
+$under-dark-purple: #320257
+$cyan: #32cdc9
+$under-cyan: #00BBB6
+$dark-cyan: #00ADA8
+$under-dark-cyan: #009D99
+$gray: #C5D6DA
+$under-gray: #B1C7CC
+$bg-gray: #e9f1f4
+$dark-gray: #a4a4a4
+$under-white: #C0DFE7
+
+$raleway: 'Raleway', sans-serif
+$montserrat: 'Montserrat', sans-serif
+
+*
+  color: #fff
+  font-family: $montserrat
+  margin: 0
+  padding: 0
+
+body
+  font-size: 14px
+
+  .wrapper
+    margin: 0 auto
+    width: 960px
+
+  button
+    border: 0
+    background: transparent
+    cursor: pointer
+
+  ul
+    list-style: none
+
+    li
+      display: inline-block
+      float: left
+
+  a
+    text-decoration: none
+
+  .i-left
+    margin-right: 10px
+
+  .i-right
+    margin-left: 10px
+
+  .underline
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+
+  .left
+    float: left
+
+  .right
+    float: right
+
+  .btn
+    border-radius: 5px
+    padding: 10px 20px
+
+  .btn-red
+    background-color: $red
+    box-shadow: 0 3px 0 0 $under-red
+
+    &:hover
+      background-color: $dark-red
+      box-shadow: 0 3px 0 0 $under-dark-red
+
+  .btn-cyan
+    background-color: $cyan
+    box-shadow: 0 3px 0 0 $under-cyan
+
+    &:hover
+      background-color: $dark-cyan
+      box-shadow: 0 3px 0 0 $under-dark-cyan
+
+  .btn-purple
+    background-color: $purple
+    box-shadow: 0 3px 0 0 $under-purple
+
+    &:hover
+      background-color: $dark-purple
+      box-shadow: 0 3px 0 0 $under-dark-purple
+
+
+
+  .sub-menu
+    display: none
+    position: absolute
+    border-radius: 5px
+    z-index: 1
+    margin-top: 15px
+    margin-left: -20px
+
+    li
+      float: none
+      display: block
+      padding: 5px 70px 5px 10px
+      margin: 10px
+
+      a
+        color: #9260AC
+
+      &:hover
+        border-radius: 5px
+        background-color: $purple
+        box-shadow: 0 3px 0 0 $under-purple
+
+        a
+          color: #fff
+
+        a::after
+          position: absolute
+          right: 30px
+          margin-top: 2px
+          font-family: FontAwesome
+          content: ""
+          color: #B054DD
+
+header
+  background: url("../img/bg-header.jpg")
+  background-size: cover
+  font-family: $raleway
+  height: 250px
+
+  #logo
+    margin: 45px 10px 25px 10px
+
+  nav
+    background: linear-gradient(to bottom, rgb(152,44,202) 0%,rgb(103,13,173) 100%)
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    height: 62px
+
+    .sub-menu::before
+      font-family: FontAwesome
+      font-size: 30px
+      position: absolute
+      content: ""
+      z-index: 2
+      margin-top: -20px
+      margin-left: 20px
+
+    .sub-menu
+      box-shadow: 0 3px 0 0 $under-white
+      background-color: #fff
+
+    #pin
+      font-size: 2rem
+      background: linear-gradient(to bottom, rgb(131,21,183) 0%,rgb(83,4,146) 100%)
+      padding: 10px 30px 20px 30px
+      border-top-left-radius: 5px
+      float: left
+
+      &:hover
+        background: darken($purple, 15%)
+
+    ul
+      list-style: none
+  
+      li
+        padding: 22px 22px
+
+        .fa
+          color: $dark-purple
+  
+        &:hover
+          background: darken($purple, 10%)
+
+          .fa
+            color: #fff
+
+          .sub-menu
+            display: block
+
+      #join
+        background: linear-gradient(to bottom, rgb(0,188,183) 30%,rgb(0,157,151) 100%)
+        padding: 20px 50px
+        font-size: 18px
+        float: right
+        border-top-right-radius: 5px
+
+        &:hover
+          background: darken($cyan, 10%)
+
+  #info-tab
+    background-color: $dark-purple
+    font-family: $montserrat
+    height: 45px
+    box-shadow: 0 6px 0 0 $under-dark-purple
+
+    .sub-menu
+      background-color: $dark-purple
+      box-shadow: 0 5px 0 0 $under-dark-purple
+      margin-left: -15px
+      margin-top: 5px
+      padding-top: 5px
+
+      li
+        margin: 5px 10px
+
+    ul
+      padding: 10px 0
+      margin: 0 15px
+
+      .info-li
+        padding: 5px 15px
+        font-size: 0.8rem
+
+        &:hover
+          background-color: darken($dark-purple, 5%)
+          box-shadow: 0 1px 0 0 $purple
+          border-radius: 100px
+
+          .sub-menu
+            display: block
+
+
+hr
+  border: 0
+  border-top: 4px solid #d9ccee
+
+#main
+  background-color: $bg-gray
+
+  .btn-circle
+    top: -60px
+    left: 20px
+
+  .btn-pill
+    border-radius: 100px
+    position: relative
+    top: -100px
+    left: 550px
+    padding: 5px 10px
+    margin-left: 20px
+
+  .btn-purple .fa
+    background-color: $dark-purple
+
+    &:hover
+      background-color: $under-dark-purple
+
+  p
+    color: $dark-gray
+    display: inline
+    font-size: 0.8rem
+    margin-top: 22px
+
+  #join-now
+    margin: 10px
+
+  #drop
+    background-color: #c9d5d9
+    box-shadow: 0 3px 0 0 #b6c6cb
+    padding-left: 15px
+    padding-right: 15px
+    float: right
+    margin: 12px 15px
+
+  #like
+    float: right
+    margin: 10px 0
+
+  .slider
+    img
+      position: relative
+      margin: 10px 0
+      border-radius: 5px
+
+
+  .place-info
+    border-left: 16px solid $cyan
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    background-color: #fff
+    box-shadow: 0 5px 0 0 $under-white
+
+    h2
+      display: inline-block
+      color: $cyan
+      padding: 30px 20px
+      width: 200px
+
+    .place-text
+      padding: 30px 20px
+      float: right
+      width: 650px
+
+#content
+  background-color: $bg-gray
+  padding: 10px 0
+  height: 700px
+  border-radius: 5px
+
+  #left-content
+    float: left
+    width: 66%
+
+    #cyan
+      background-color: $cyan
+      box-shadow: 0 3px 0 0 $under-cyan
+
+      li:hover
+        background-color: $dark-cyan
+        box-shadow: 0 3px 0 0 $under-dark-cyan
+
+    nav
+      height: 55px
+      border-radius: 5px
+      margin-bottom: 15px
+
+      ul
+        li
+          padding: 20px 20px 20px 20px
+          border-radius: 5px
+          box-shadow: none
+
+          a
+            height: 100%
+
+          &:hover
+            padding-bottom: 17px
+
+    .main-content
+      border-radius: 5px
+      background-color: #fff
+      padding: 40px 30px
+      box-shadow: 0 3px 0 0 $under-white
+
+      .main-text
+        padding: 20px 30px
+        background-color: #F7F7F7
+        border-radius: 5px
+
+        .btn-pill
+          margin-top: 20px
+          border-radius: 100px
+
+        p
+          color: $cyan
+
+        #dick
+          position: relative
+          top: -55px
+          left: 200px
+
+      p
+        margin-top: 20px
+        color: #A6A6A6
+
+    #purple
+      background-color: $purple
+      box-shadow: 0 3px 0 0 $under-purple
+      margin-top: 15px
+
+      li:hover
+        background-color: $dark-purple
+        box-shadow: 0 3px 0 0 $under-dark-purple
+
+  #right-content
+    width: 32%
+    float: right
+
+    .btn-circle
+      top: -50px
+      left: 240px
+
+    .btn-square
+      height: 55px
+      width: 60px
+      float: right
+      margin-left: 10px
+
+      .fa
+        font-size: 20px
+
+      p
+        margin-top: 3px
+
+    .interesting
+      background-color: #fff
+      margin-top: 80px
+      padding-bottom: 10px
+      box-shadow: 0 3px 0 0 $under-white
+
+      img
+        width: 100%
+
+      h3, h4
+        color: $cyan
+        margin: 10px 25px
+        font-weight: 400
+
+.btn-circle
+  position: relative
+  background-color: $purple
+  border-radius: 200px
+  box-shadow: 0 3px 0 0 $under-purple
+  width: 60px
+  height: 35px
+
+  .right
+    background-color: $dark-purple
+    margin: 5px
+    padding: 5px 10px
+    border-radius: 50%
+    box-shadow: 0 2px 0 0 $under-dark-purple
+
+  .left
+    margin: 5px 0px 5px 7px
+    padding: 5px 5px
+
+.btn-pill
+  .fa
+    padding-top: 8px
+    background-color: #00ADA8
+    border-radius: 50%
+    width: 30px
+    height: 22px
+
+  &:hover .fa
+    background-color: $under-dark-cyan
+
+
