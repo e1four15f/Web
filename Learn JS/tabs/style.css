@@ -1,0 +1,56 @@
+body {
+     width: 600px;
+     margin: 0 auto;
+ }
+
+#tabs-wrapper {
+    margin-top: 20%;
+    color: #fff;
+}
+
+.tabs-nav {
+    display: flex;
+}
+
+.tabs-nav__link {
+    flex: 1;
+    color: #fff;
+    background-color: #32cdc9;
+    padding: 12px;
+    margin-right: 4px;
+    text-align: center;
+    transition: color .3s;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.tabs-nav__link:last-child {
+    margin-right: 0;
+}
+
+.tabs-nav__link:hover {
+    background-color: deeppink;
+}
+
+.tabs-nav__link-active {
+    background-color: hotpink;
+}
+
+.tab {
+    display: none;
+    margin-top: 2px;
+}
+
+.tab-active {
+    display: block;
+}
+
+.tab__content {
+    background-color: hotpink;
+    padding: 1.5rem;
+}
+
+.tab__content span {
+    color: deeppink;
+    font-size: 1.2rem;
+}
