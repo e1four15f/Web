@@ -1,0 +1,18 @@
+.item {
+    background-color: greenyellow;
+    display: inline-block;
+}
+
+#itemCallback {
+    background-color: cyan;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+.box p {
+    display: none;
+}
