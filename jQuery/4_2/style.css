@@ -1,0 +1,22 @@
+.first {
+    background-color: cyan;
+}
+
+.second {
+    background-color: pink;
+}
+
+.third {
+    background-color: greenyellow;
+}
+
+.inner {
+    padding: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+.new {
+    border: 1px solid black;
+    margin: 5px 0;
+}

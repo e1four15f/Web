@@ -1,0 +1,24 @@
+.item {
+    background-color: greenyellow;
+    display: inline-block;
+}
+
+.gradient {
+    height: 3000px;
+    border: 1px solid gray;
+    background: linear-gradient(0deg, red, blue);
+}
+
+#itemCallback {
+    background-color: cyan;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+.box p {
+    display: none;
+}
