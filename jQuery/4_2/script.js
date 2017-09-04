@@ -6,3 +6,18 @@ $('.inner').wrap('<div class=new>Text</div>');
 //$('.inner').wrapInner('<div class=new>Text</div>');
 
 $('.second').clone().appendTo('.third');
+
+var p;
+$('button').click(function() {
+    if(p) {
+        p.prependTo('.block');
+        p = null;
+    } else {
+        p = $('#text').detach();
+    }
+});
+
+/*
+$('.second').empty();
+$('.second').remove();
+*/
