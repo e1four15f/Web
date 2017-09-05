@@ -1,5 +1,3 @@
-$('.mobile-tab').hide();
-
 $('#burg').on('click', function() {
-    $('.mobile-tab').slideToggle(800);
+    $('#desktop').slideToggle(800);
 });
