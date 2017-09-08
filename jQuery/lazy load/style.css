@@ -1,0 +1,46 @@
+#gallery {
+    width: 500px;
+    margin: 20px auto;
+    font: normal 1.3em sans-serif;
+    color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.block {
+    display: none;
+    border: solid #fff;
+    flex-basis: 40%;
+    align-self: center;
+    box-shadow: 0 1px 1px #ccc;
+    margin: 2px;
+    background-color: #f1f1f1;
+}
+
+.block img {
+    width: 100%;
+}
+
+#load-more, #load-more:visited {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+#load-more {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #33739e;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 1px #ccc;
+    transition: all 600ms ease-in-out;
+}
+
+#load-more:hover {
+    background-color: #fff;
+    color: #33739e;
+    border: 1px solid #33739e;
+}
